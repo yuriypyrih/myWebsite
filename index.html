@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <script src="nav.js"></script>
+    <link rel="stylesheet" href="css/icon-font.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>Yuriy Pyrih</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input
+        type="checkbox"
+        class="navigation__checkbox"
+        id="navi-toggle"
+        onClick="check()"
+      />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav" id="navigation_nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              href="#section-about"
+              onClick="unCheck()"
+              class="navigation__link u-disable-link"
+              id="link-1"
+              ><span>01</span>About Me</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-values"
+              onClick="unCheck()"
+              class="navigation__link u-disable-link"
+              id="link-2"
+              ><span>02</span>My Values</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-projects"
+              onClick="unCheck()"
+              class="navigation__link u-disable-link"
+              id="link-3"
+              ><span>03</span>Recent Projects</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a
+              href="#section-contact"
+              onClick="unCheck()"
+              class="navigation__link u-disable-link"
+              id="link-4"
+              ><span>04</span>Contact Me</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="img/logo-white.png" alt="Logo" class="header__logo" />
+      </div>
+
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">YURIY PYRIH</span>
+          <span class="heading-primary--sub">I am a full-stack developer</span>
+        </h1>
+
+        <a href="#section-about" class="btn btn--white btn--animated"
+          >About Me</a
+        >
+      </div>
+    </header>
+
+    <!--
+    <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+        <div class="col-1-of-2">
+          Col 1 of 2
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-3">
+          Col 1 of 3
+        </div>
+        <div class="col-2-of-3">
+          Col 2 of 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-1-of-4">
+          Col 1 of 4
+        </div>
+        <div class="col-2-of-4">
+          Col 2 of 4
+        </div>
+      </div>
+    </section>
+  -->
+
+    <main>
+      <section class="section-about">
+        <a name="section-about"></a>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Something about me</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              FULL-STACK DEVELOPER
+            </h3>
+            <p class="paragraph u-margin-bottom-huge">
+              My name is Yuriy Pyrih and I am 22 years old web developer. <br />
+              Even from young age, I was always a tech savage geek, so it was
+              obvious to me that the Software Industry was my cup of tea! I have
+              explored many areas such as Game Development and Robotics but the
+              one that seems to appeal to me the most is Web Technologies.
+              Anything from Network Protocols down to the Server Databases but
+              most importantly the Architecture of the Software itself.
+            </p>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/new-nato-2.jpg"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              /><img
+                src="img/new-nato-1.png"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              /><img
+                src="img/new-nato-3.png"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <a name="section-values"></a>
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                src="img/icon-responsive.png"
+                alt="responsive-design-icon"
+                class="feature-box__icon icon-basic-world"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Responsive Design
+              </h3>
+              <p class="feature-box__text">
+                Nowadays, every device has internet access. Therefore, it's a
+                responsibility of the developer to customize the experience of
+                the user accordingly.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                src="img/icon-ui.png"
+                alt="responsive-design-icon"
+                class="feature-box__icon icon-basic-world"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Intuitive UI
+              </h3>
+              <p class="feature-box__text">
+                If it needs explanation, it's not intuitive. Simple as that.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                src="img/icon-github.png"
+                alt="responsive-design-icon"
+                class="feature-box__icon icon-basic-world"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Maintanable Code
+              </h3>
+              <p class="feature-box__text">
+                Writing maintainable code is not hard, it just requires careful
+                thought. Adding Documentation can go a long way.
+              </p>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="feature-box">
+              <img
+                src="img/icon-security.png"
+                alt="responsive-design-icon"
+                class="feature-box__icon icon-basic-world"
+              />
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Security
+              </h3>
+              <p class="feature-box__text">
+                Not only from outsiders but from internal erros as well. Plus, I
+                have read the GDPR and know everything about it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-tours">
+        <a name="section-projects"></a>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Most Recent Projects
+          </h2>
+        </div>
+
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front--1">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <div class="card__heading">Mind Puzzles</div>
+                <div class="card__details">
+                  A web-based game that aims to help elderly people to preserve
+                  their cognitive abilities. The goal is to prevent disorders
+                  like dementia or even Alzheimer.
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--1">
+                <div class="card__explanation">
+                  <ul>
+                    <li>Front-End: HTML, CSS, JavaScript</li>
+                    <li>Back-End: PHP</li>
+                    <li>Database: MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front--2">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <div class="card__heading">Samosville</div>
+                <div class="card__details">
+                  A 2D strategy board game for Desktop. Collect resources,
+                  create your army, and protect your castle.
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--2">
+                <div class="card__explanation">
+                  <ul>
+                    <li>Logic & Graphics: Java</li>
+                    <li>Database: MySQL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front card__side--front--3">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <div class="card__heading">Dodge</div>
+                <div class="card__details">
+                  An action game for Desktop. Dodge the enemies for as long as
+                  it requires to survive the round.
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back--3">
+                <div class="card__explanation">
+                  <ul>
+                    <li>Logic & Graphics: Java</li>
+                    <li>Database: N/A</li>
+                    <li>
+                      (I'm currently converting this game into Andoird App,
+                      which will be launched on Google Play soon. Therefore, the
+                      data storing method will change accordingly)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-button">
+          <a href="https://github.com/yuriypyrih" class="btn btn--dark"
+            >Source Code on GitHub</a
+          >
+        </div>
+      </section>
+      <a name="section-contact"></a>
+      <section class="section-book">
+        <div class="book">
+          <div class="book__contacts">
+            <div
+              class="book__contacts__heading heading-contact u-margin-bottom-small"
+            >
+              Contact Me
+            </div>
+            <div class="book__contacts__info">
+              <img
+                src="img/icon_mail.png"
+                alt="emai-icon"
+                class="book__contacts__info__icon"
+              />
+              <a
+                href="mailto:yuriypyrih@gmail.com"
+                class="book__contacts__email heading-contact__link"
+                >yuriypyih@gmail.com</a
+              >
+            </div>
+            <div class="book__contacts__info">
+              <img
+                src="img/icon_twitter.png"
+                alt="emai-icon"
+                class="book__contacts__info__icon"
+              />
+              <a
+                href="https://twitter.com/yuriy_pyrih"
+                class="book__contacts__twitter heading-contact__link"
+                >Twitter</a
+              >
+            </div>
+            <div class="book__contacts__info heading-contact__link">
+              <img
+                src="img/icon_linkedin.png"
+                alt="emai-icon"
+                class="book__contacts__info__icon"
+              />
+              <a
+                href="https://www.linkedin.com/in/yuriy-pyrih-57675b188/"
+                class="book__contacts__twitter heading-contact__link"
+                >Linkdedin</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__logo-box">
+            <img
+              src="img/logo-white.png"
+              alt="Full logo"
+              class="footer__logo"
+            />
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Build by Yuriy Pyrih as part of my Porfolio © 2020 Greece. All
+            rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
